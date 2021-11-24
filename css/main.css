@@ -1,0 +1,108 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+body{margin-top: 50px; overflow-x: hidden;}
+
+.blue{background-color: rgb(143, 150, 255);}
+.grey{background-color: rgb(228, 228, 228);}
+.orange{background-color: rgb(255, 151, 151);}
+.h100{height: 100vh;}
+.ma{margin: auto;}
+
+/* Fonts sizes */
+
+.fs18{font-size: 18px;}
+.fs20{font-size: 20px;}
+.fs22{font-size: 22px;}
+.fs24{font-size: 24px;}
+.fs26{font-size: 26px;}
+.fs28{font-size: 28px;}
+.fs30{font-size: 30px;}
+.fs50{font-size: 60px;}
+
+/* fonts */
+.sfont{font-family: 'DM Serif Display', serif; font-weight: bold;}
+
+/* logo */
+.logo{
+    font-family: 'DM Serif Display', serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+
+.content{
+    width: 40vw;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    clear: both;
+}
+.intro{
+    float: right;
+}
+.clear{clear: both;}
+.me{
+    /* width: 50vw;    
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+    z-index: 999;
+    height: 70vh; */
+    background-image: url(/images/foto.jpg);
+}
+.social{    
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.social>a{font-size: 32px;}
+.card i{font-size: 50px;}
+.bgImage{    
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.h30{height: 30vh;}
+.socialFoo{font-size: 32px;}
+.imgResponsive{width: 100%; height: auto; display: block;}
+.dblock{display: block;}
+
+/* Flip cards */
+.flip-container {
+    perspective: 1000px;
+  }
+  .cardFlip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  .flip-container:hover .cardFlip {
+    transform: rotateY(180deg);
+  }
+  .cardFront, .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .cardFront {
+    background-color: #fff;
+    
+  }
+  .cardBack {
+    background-color: #fff;
+    transform: rotateY(180deg);
+  }
+
+  /* current page */
